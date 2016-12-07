@@ -1,18 +1,18 @@
-# Abstract Test Suite: Data Specification on Addresses (DRAFT)
+# Abstract Test Suite: Data Specification on Transport Networks (DRAFT)
                        
-The Data Specification on Addresses – Technical Guidelines (version 3.2) and the associated GML application schemas (versions 3.0 and 4.0) specifying requirements for the interoperability of spatial data sets of the data theme Addresses.
+The Data Specification on Transport Networks – Technical Guidelines (version 3.1) and the associated GML application schemas (versions 3.0 and 4.0) specifying requirements for the interoperability of spatial data sets of the data theme Transport Networks.
 
 The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [GML application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-gml) | INSPIRE spatial data set encoded in GML, Addresses features |
-| [Application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as) | INSPIRE spatial data set |
-| [Reference Systems, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-rs) | INSPIRE spatial data set |
-| [Data Consistency, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-dc) | INSPIRE spatial data set |
-| [Information Accessibility, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-ia) | INSPIRE spatial data set |
-| [Portrayal, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal) | INSPIRE view service |
-| [Metadata for interoperability, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-metadata) | ISO 19115/19119 metadata record |
+| [GML application schema, Transport Networks Simple](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features |
+| [Application schema, Transport Networks Simple](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-as) | INSPIRE spatial data set |
+| [Reference Systems, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-rs) | INSPIRE spatial data set |
+| [Data Consistency, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-dc) | INSPIRE spatial data set |
+| [Information Accessibility, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ia) | INSPIRE spatial data set |
+| [Portrayal, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-portrayal) | INSPIRE view service |
+| [Metadata for interoperability, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-metadata) | ISO 19115/19119 metadata record |
 
 ## Approach
 
@@ -26,7 +26,7 @@ We have used the following approach to represent the Abstract Test Suite based o
 
 4. As a result, there is no need for an encoding-related, data delivery IR conformance class. Instead, the details how to test the conformance for any additional encoding rule would need to be added to the relevant tests and a new conformance class for the validation against the schemas would be added.
 
-5. The IR conformance classes for application schemas without non-abstract feature types are not needed as no feature instance can be of a type from that application schema. Note that this has no effect in the data theme "Addresses"
+5. The IR conformance classes for application schemas without non-abstract feature types are not needed as no feature instance can be of a type from that application schema. Note that this has no effect in the data theme "Transport Networks"
 
 6. All generic tests related to the GML encoding rule are moved to a new INSPIRE GML conformance class (that should become part of D2.7 in a future revision) and which all other TG conformance classes would normatively reference / depend on.
 
