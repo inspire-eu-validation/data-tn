@@ -10,7 +10,7 @@
 
 **Reference(s)**:
 
-* [TG DS-AD](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/README#ref_TG_DS_AD), IR Requirement, Article 14(1)(a)
+* [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/ad-portrayal/README#ref_TG_DS_AD), IR Requirement, Article 14(1)(a)
 
 **Test type**: Automated
 
@@ -18,10 +18,10 @@
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/README#namespaces).
+The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/ad-portrayal/README#namespaces).
 
 Abbreviation                                     |  XPath expression												|  Parameter  value
 ------------------------------------------------ | ---------------------------------------------------------------	| ---------------------------------------------------------------
 layer name <a name="name"></a> | /wms:WMS_Capabilities/wms:Capability/wms:Layer/wms:Name | ISO 19128
                                  | /wmts:Capabilities/wmts:Contents/wmts:Layer/ows:Identifier | WMTS 1.0.0
-harmonized names <a name="names"></a> | ('AD.Address')
+harmonized names <a name="names"></a> | ('TN.AirTransportNetwork.ApronArea', 'TN.AirTransportNetwork.RunwayArea', 'TN.AirTransportNetwork.TaxiwayArea', 'TN.CableTransportNetwork.CablewayLink', 'TN.CommonTransportElements.TransportArea', 'TN.CommonTransportElements.TransportLink', 'TN.CommonTransportElements.TransportNode', 'TN.RailTransportNetwork.RailwayArea', 'TN.RailTransportNetwork.RailwayLink', 'TN.RailTransportNetwork.RailwayStationArea', 'TN.RailTransportNetwork.RailwayYardArea', 'TN.RoadTransportNetwork.RoadArea', 'TN.RoadTransportNetwork.RoadLink', 'TN.RoadTransportNetwork.RoadServiceArea', 'TN.RoadTransportNetwork.VehicleTrafficArea', 'TN.WaterTransportNetwork.FairwayArea', 'TN.WaterTransportNetwork.PortArea', 'TN.WaterTransportNetwork.WaterwayLink')
