@@ -16,7 +16,7 @@ The test always passes.
 
 **Reference(s)**: 
 
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-ia/README#ref_TG_DS_tmpl) IR requirement Article 6 (3)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ia/README#ref_TG_DS_tmpl) IR requirement Article 6 (3)
 
 **Test type**: Automated
 

@@ -12,24 +12,22 @@
 
 This data theme currently has the following association roles:
 
-* Address.[component](#component) : stat:AddressComponent
-* Address.[parcel](#parcel) : CadastralParcel
-* Address.[parentAddress](#parentAddress) : Address
-* Address.[building](#building) : bui:Building, AbstractConstruction
-* AddressAreaName.[namedPlace](#namedPlace) : gn:NamedPlace
-* AddressComponent.[situatedWithin](#situatedWithin) : AddressComponent
-* AdminUnitName.[adminUnit](#adminUnit) : au:AdministrativeUnit
-* ThoroughfareName.[transportLink](#transportLink) : tn:TransportLink
-* Address.locator.AddressLocator.[withinScopeOf](#withinScopeOf) : AddressComponent
-* AddressRepresentation.[addressFeature](#addressFeature) : Address
+* MarkerPost.[route](#route) : TransportPoint
+* TransportLinkSet.[post](#post) : MarkerPost
+* TrafficSeparationScheme.[component](#component) : TrafficSeparationSchemeArea
+* TrafficSeperationScheme.[markerBuoy](#markerBuoy) : Buoy
+* TrafficSeperationScheme.[marineWaterRoute](#marineWaterRoute) : MarineWaterway
+* TrafficSeperationScheme.[markerBeacon](#markerBeacon) : Beacon
 
 **Reference(s)**: 
 
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-ia/README#ref_TG_DS_tmpl) IR requirement Article 4 (2)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ia/README#ref_TG_DS_tmpl) IR requirement Article 4 (2)
 
-**Test type**: adtomated
+**Test type**: automated
 
 **Notes**
+
+* TrafficSeparationScheme is an abstract class. It does not have any subtypes.
 
 ## Messages
 
@@ -39,18 +37,13 @@ brokenLink <a name="brokenLink"/>  |  XML document '$filename', $featureType '$g
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-ia/README#namespaces).
+The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ia/README#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-component <a name ="component"></a>	| //schema-element(ad:Address)/ad:component/@xlink:href
-parcel <a name ="parcel"></a>	| //schema-element(ad:Address)/ad:parcel/@xlink:href
-parentAddress <a name ="parentAddress"></a>	| //schema-element(ad:Address)/ad:parentAddress/@xlink:href
-building <a name ="building"></a>	| //schema-element(ad:Address)/ad:building/@xlink:href
-namedPlace <a name ="namedPlace"></a>	| //schema-element(ad:AddressAreaName)/ad:namedPlace/@xlink:href
-situatedWithin <a name ="situatedWithin"></a>	| //schema-element(ad:ThoroughfareName)/ad:situatedWithin/@xlink:href or //schema-element(ad:AddressAreaName)/ad:situatedWithin/@xlink:href or //schema-element(ad:PostalDescriptor)/ad:situatedWithin/@xlink:href or 
-adminUnit <a name ="adminUnit"></a>	| //schema-element(ad:AdminUnitName)/ad:adminUnit/@xlink:href
-admUnit <a name ="admUnit"></a>	| //schema-element(ad:AdministrativeBoundary)/ad:admUnit/@xlink:href and //schema-element(ad:AdminUnitName)/ad:admUnit/@xlink:href
-transportLink <a name ="transportLink"></a>	| //schema-element(ad:ThoroughfareName)/ad:transportLink/@xlink:href
-withinScopeOf <a name ="withinScopeOf"></a>	| //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:withinScopeOf/@xlink:href
-addressFeature <a name ="addressFeature"></a>	| //schema-element(ad:AddressRepresentation)/ad:addressFeature/@xlink:href
+route <a name ="route"></a>	| //schema-element(tn:MarkerPost)/tn:route/@xlink:href
+post <a name ="post"></a>	| //schema-element(tn-ro:Road)/ad:post/@xlink:href or //schema-element(tn-ro:ERoad)/ad:post/@xlink:href
+component <a name ="component"></a>	| 
+markerBuoy <a name ="markerBuoy"></a>	| 
+marineWaterRoute <a name ="marineWaterRoute"></a>	| 
+markerBeacon <a name ="markerBeacon"></a>	| 
