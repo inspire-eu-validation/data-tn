@@ -226,23 +226,23 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-AreaConditionValue (v3) <a name="AreaConditionValue3"></a>        | //schema-element(tn-ro3:
-AreaConditionValue (v4) <a name="AreaConditionValue4"></a>        | //schema-element(tn-ro:
-FormOfRoadNodeValue (v3) <a name="FormOfRoadNodeValue3"></a>      | //schema-element(tn-ro3:
-FormOfRoadNodeValue (v4) <a name="FormOfRoadNodeValue4"></a>      | //schema-element(tn-ro:
-FormOfWayValue (v3) <a name="FormOfWayValue3"></a>                | //schema-element(tn-ro3:
-FormOfWayValue (v4) <a name="FormOfWayValue4"></a>                | //schema-element(tn-ro:
-RoadPartValue (v3) <a name="RoadPartValue3"></a>                  | //schema-element(tn-ro3:
-RoadPartValue (v4) <a name="RoadPartValue4"></a>                  | //schema-element(tn-ro:
-RoadServiceTypeValue (v3) <a name="RoadPartValue3"></a>           | //schema-element(tn-ro3:
-RoadServiceTypeValue (v4) <a name="RoadPartValue4"></a>           | //schema-element(tn-ro:
-RoadSurfaceCategoryValue (v3) <a name="RoadSurfaceCategoryValue3"></a> | //schema-element(tn-ro3:
-RoadSurfaceCategoryValue (v4) <a name="RoadSurfaceCategoryValue4"></a> | //schema-element(tn-ro:
-ServiceFacilityValue (v3) <a name="ServiceFacilityValue3"></a>    | //schema-element(tn-ro3:
-ServiceFacilityValue (v4) <a name="ServiceFacilityValue4"></a>    | //schema-element(tn-ro:
-SpeedLimitSourceValue (v3) <a name="SpeedLimitSourceValue3"></a>  | //schema-element(tn-ro3:
-SpeedLimitSourceValue (v4) <a name="SpeedLimitSourceValue4"></a>  | //schema-element(tn-ro:
-VehicleTypeValue (v3) <a name="VehicleTypeValue3"></a>            | //schema-element(tn-ro3:
-VehicleTypeValue (v4) <a name="VehicleTypeValue4"></a>            | //schema-element(tn-ro:
-WeatherConditionValue (v3) <a name="WeatherConditionValue3"></a>  | //schema-element(tn-ro3:
-WeatherConditionValue (v4) <a name="WeatherConditionValue4"></a>  | //schema-element(tn-ro:
+AreaConditionValue (v3) <a name="AreaConditionValue3"></a>        | //schema-element(tn-ro3:SpeedLimit)/tn-ro3:areaCondition/text()
+AreaConditionValue (v4) <a name="AreaConditionValue4"></a>        | //schema-element(tn-ro:SpeedLimit)/tn-ro:areaCondition/@xlink:href
+FormOfRoadNodeValue (v3) <a name="FormOfRoadNodeValue3"></a>      | //schema-element(tn-ro3:RoadNode)/tn-ro3:formOfRoadNode/text()
+FormOfRoadNodeValue (v4) <a name="FormOfRoadNodeValue4"></a>      | //schema-element(tn-ro:RoadNode)/tn-ro:formOfRoadNode/@xlink:href
+FormOfWayValue (v3) <a name="FormOfWayValue3"></a>                | //schema-element(tn-ro3:FormOfWay)/tn-ro3:formOfWay/text()
+FormOfWayValue (v4) <a name="FormOfWayValue4"></a>                | //schema-element(tn-ro:FormOfWay)/tn-ro:formOfWay/@xlink:href
+RoadPartValue (v3) <a name="RoadPartValue3"></a>                  | //schema-element(tn-ro3:RoadWidth)/tn-ro3:measuredRoadPart/text()
+RoadPartValue (v4) <a name="RoadPartValue4"></a>                  | //schema-element(tn-ro:RoadWidth)/tn-ro:measuredRoadPart/@xlink:href
+RoadServiceTypeValue (v3) <a name="RoadPartValue3"></a>           | //schema-element(tn-ro3:RoadServiceType)/tn-ro2:type/text()
+RoadServiceTypeValue (v4) <a name="RoadPartValue4"></a>           | //schema-element(tn-ro:RoadServiceType)/tn-ro2:type/@xlink:href
+RoadSurfaceCategoryValue (v3) <a name="RoadSurfaceCategoryValue3"></a> | //schema-element(tn-ro3:RoadSurfaceCategory)/tn-ro3:surfaceCategory/text()
+RoadSurfaceCategoryValue (v4) <a name="RoadSurfaceCategoryValue4"></a> | //schema-element(tn-ro:RoadSurfaceCategory)/tn-ro:surfaceCategory/@xlink:href
+ServiceFacilityValue (v3) <a name="ServiceFacilityValue3"></a>    | //schema-element(tn-ro3:RoadServiceType/tn-ro3:availableFacility/text()
+ServiceFacilityValue (v4) <a name="ServiceFacilityValue4"></a>    | //schema-element(tn-ro:RoadServiceType/tn-ro3:availableFacility/@xlink:href
+SpeedLimitSourceValue (v3) <a name="SpeedLimitSourceValue3"></a>  | //schema-element(tn-ro3:SpeedLimit)/tn-ro3:speedLimitSource/text()
+SpeedLimitSourceValue (v4) <a name="SpeedLimitSourceValue4"></a>  | //schema-element(tn-ro:SpeedLimit)/tn-ro:speedLimitSource/@xlink:href
+VehicleTypeValue (v3) <a name="VehicleTypeValue3"></a>            | //schema-element(tn-ro3:SpeedLimit)/tn-ro3:vehicleType/text()
+VehicleTypeValue (v4) <a name="VehicleTypeValue4"></a>            | //schema-element(tn-ro:SpeedLimit)/tn-ro:vehicleType/@xlink:href
+WeatherConditionValue (v3) <a name="WeatherConditionValue3"></a>  | //schema-element(tn-ro3:SpeedLimit)/tn-ro3:weatherCondition/text()
+WeatherConditionValue (v4) <a name="WeatherConditionValue4"></a>  | //schema-element(tn-ro:SpeedLimit)/tn-ro:weatherCondition/@xlink:href
