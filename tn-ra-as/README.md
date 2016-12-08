@@ -22,7 +22,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as/README#ref_TG_DS_TN) | [GML application schema, Rail Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-gml) | INSPIRE spatial data set encoded in GML, Rail Transport Networks features | n/a |
+| [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as/README#ref_TG_DS_TN) | [GML application schema, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features | n/a |
 | [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as/README#ref_TG_DS_TN) | [Application schema, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as) | INSPIRE spatial data set, Transport Networks features | n/a |
  
 ## Feature types <a name="feature-types"></a>
