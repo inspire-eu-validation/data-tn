@@ -14,16 +14,17 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* AerodromeCategory can only be associated with a spatial object that is an Aerodrome Node or an Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeCategory](#AerodromeCategory) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* AerodromeType can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeType](#AerodromeType) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* ConditionOfAirFacility can only be associated with a spatial object that is an Aerodrome Node, an Aerodrome Area or a Runway Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea) or networkRef.element.oclIsKindOf(RunwayArea)". Verify that a [ConditionOfAirFacility](#ConditionOfAirFacility) is only associated with a spatial object [AerodromeNode](#AerodromeNode), [AerodromeArea](#AerodromeArea) or [RunwayArea](#RunwayArea).
-* ElementLength can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)." Verify that an [ElementLength](#ElementLength) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* ElementWidth can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that an [ElementWidth](#ElementWidth) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* FieldElevation can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [FieldElevation](#FieldElevation) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* LowerAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that a [LowerAltitudeLimit](#LowerAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
-* SurfaceComposition can only be associated with a spatial object that is a Runway Area, Taxiway Area, Apron Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(ApronArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that a [SurfaceComposition](#SurfaceComposition) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea), [ApronArea](#ApronArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* UpperAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that an [UpperAltitudeLimit](#UpperAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
-* UseRestriction can only be associated with a spatial object that is an Air Route, Air Link (or specialized Air Link), Air Node (or specialized Air Node) or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRoute) or networkRef.element.oclIsKindOf(AirLink) or networkRef.element.oclIsKindOf(AirNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [UseRestriction](#UseRestriction) is only associated with a spatial object [AirRoute](#AirRoute), [AirLink](#AirLink), [AirNode](#AirNode) or [AerodromeArea](#AerodromeArea).
+* DesignSpeed can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [DesignSpeed](#DesignSpeed) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* NominalTrackGauge can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [NominalTrackGauge](#NominalTrackGauge) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* NumberOfTracks can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [NumberOfTracks](#NumberOfTracks) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* RailwayElectrification can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [RailwayElectrification](#RailwayElectrification) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* RailwayStationCode can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [RailwayStationCode](#RailwayStationCode) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* RailwayType can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [RailwayType](#RailwayType) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* RailwayUse can only be associated with a spatial object that is part of a railway transport network; OCL: "inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or networkRef.element.oclIsKindOf(RailwayLink) or networkRef.element.oclIsKindOf(RailwayNode)". Verify that a [RailwayUse](#RailwayUse) is only associated with a spatial object [RailwayArea](#RailwayArea), [RailwayYardArea](#RailwayYardArea), [RailwayStationArea](#RailwayStationArea), [RailwayLine](#RailwayLine), [RailwayLinkSequence](#RailwayLinkSequence), [RailwayLink](#RailwayLink),  or [RailwayNode](#RailwayNode).
+* For a railway station node, the value for the "formOfNode" attribute shall always be "RailwayStop"; OCL:"formOfNode = FormOfRailwayNodeValue::railwayStop". Verify that the value of the attribute [formOfNode](#formOfNode) of all [RailwayStationNode](#RailwayStationNode) is RailwayStop.
+* For a railway yard node, the value for the "formOfNode" attribute shall always be "RailwayStop"; OCL: "formOfNode = FormOfRailwayNodeValue::railwayStop". Verify that the value of the attribute [formOfNode](#formOfNode) of all [RailwayYardNode](#RailwayYardNode) is RailwayStop.
+
+
 
 **Reference(s)**: 
 
@@ -45,24 +46,20 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-AerodromeCategory <a name="AerodromeCategory"></a> 	| 	//schema-element(
-AerodromeNode <a name="AerodromeNode"></a>   | //schema-element(
-AerodromeArea <a name="AerodromeArea"></a>  | //schema-element(
-AerodromeType <a name="AerodromeType"></a> 	| 	//schema-element(
-ConditionOfAirFacility <a name="ConditionOfAirFacility"></a> 	| 	//schema-element(
-RunwayArea <a name="RunwayArea"></a> 	| 	//schema-element(
-ElementLength <a name="ElementLength"></a> 	| 	//schema-element(
-ElementWidth <a name="ElementWidth"></a> 	| 	//schema-element(
-TaxiwayArea <a name="TaxiwayArea"></a> 	| 	//schema-element(
-TouchDownLiftOff <a name="TouchDownLiftOff"></a> 	| 	//schema-element(
-FieldElevation <a name="FieldElevation"></a> 	| 	//schema-element(
-LowerAltitudeLimit <a name="LowerAltitudeLimit"></a> 	| 	//schema-element(
-UpperAltitudeLimit <a name="UpperAltitudeLimit"></a> 	| 	//schema-element(
-AirRouteLink <a name="AirRouteLink"></a> 	| 	//schema-element(
-AirRoute <a name="AirRoute"></a> 	| 	//schema-element(
-AirLink <a name="AirLink"></a> 	| 	//schema-element(
-AirNode <a name="AirNode"></a> 	| 	//schema-element(
-AirspaceArea <a name="AirspaceArea"></a> 	| 	//schema-element(
-SurfaceComposition <a name="SurfaceComposition"></a> 	| 	//schema-element(
-ApronArea <a name="ApronArea"></a> 	| 	//schema-element(
-UseRestriction <a name="UseRestriction"></a> 	| 	//schema-element(
+DesignSpeed <a name="DesignSpeed"></a> 					| 	//schema-element( 
+NominalTrackGauge <a name="NominalTrackGauge"></a> 		| 	//schema-element( 
+NumberOfTracks <a name="NumberOfTracks"></a> 			| 	//schema-element( 
+RailwayElectrification <a name="RailwayElectrification"></a> | //schema-element( 
+RailwayStationCode <a name="RailwayStationCode"></a> 	| 	//schema-element( 
+RailwayType <a name="RailwayType"></a> 					| 	//schema-element( 
+RailwayUse <a name="RailwayUse"></a> 					| 	//schema-element( 
+RailwayArea <a name="RailwayArea"></a> 					| 	//schema-element(
+RailwayYardArea <a name="RailwayYardArea"></a> 			| 	//schema-element(
+RailwayStationArea <a name="RailwayStationArea"></a> 	| 	//schema-element(
+RailwayLine <a name="RailwayLine"></a> 					| 	//schema-element(
+RailwayLinkSequence <a name="RailwayLinkSequence"></a> 	| 	//schema-element(
+RailwayLink <a name="RailwayLink"></a> 					| 	//schema-element(
+RailwayNode <a name="RailwayNode"></a> 					| 	//schema-element(
+formOfNode <a name="formOfNode"></a> 					| 	//schema-element( 
+RailwayStationNode <a name="RailwayStationNode"></a> 	| 	//schema-element(
+RailwayYardNode <a name="RailwayYardNode"></a> 			| 	//schema-element(
