@@ -14,12 +14,16 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* An address shall have an admin unit address component spatial object whose level is 1 (Country); OCL: "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". Verify that for each [address](#address), an AdminUnitName is referenced in [component](#component) and that it is of [level](#level) 1.
-* An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true); OCL: "inv: self.position -> one(a1 | a1.default = true)". Verify that for each [address](#address) that there is only one [GeographicPosition](#GeographicPosition) with value true for the [default attribute](#default).  
-* If no post code exists, a post name is required.; OCL: "inv: self.postCode->isEmpty() implies self.postName->notEmpty()". Verify that if there is no [postCode](#postCode) value, there is a [postName](#postName) value.
-* If no post name exists, a post code is required.; OCL: "inv: self.postName->isEmpty() implies self.postCode->notEmpty()". Verify that if there is no [postName](#postName) value, there is a [postCode](#postCode) value.
-* If no designator exists, a name is required.; OCL: "inv: self.designator->isEmpty() implies self.name->notEmpty()". Verify that if there is no [designator](#designator) value, there is a [name](#name) value.
-* If no name exists, a designator is required.; OCL: "inv: self.name->isEmpty() implies self.designator->notEmpty()". Verify that if there is no [name](#name) value, there is a [designator](#designator) value.
+* AerodromeCategory can only be associated with a spatial object that is an Aerodrome Node or an Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeCategory](#AerodromeCategory) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
+* AerodromeType can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeType](#AerodromeType) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
+* ConditionOfAirFacility can only be associated with a spatial object that is an Aerodrome Node, an Aerodrome Area or a Runway Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea) or networkRef.element.oclIsKindOf(RunwayArea)". Verify that a [ConditionOfAirFacility](#ConditionOfAirFacility) is only associated with a spatial object [AerodromeNode](#AerodromeNode), [AerodromeArea](#AerodromeArea) or [RunwayArea](#RunwayArea).
+* ElementLength can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)." Verify that an [ElementLength](#ElementLength) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
+* ElementWidth can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that an [ElementWidth](#ElementWidth) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
+* FieldElevation can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [FieldElevation](#FieldElevation) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
+* LowerAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that a [LowerAltitudeLimit](#LowerAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
+* SurfaceComposition can only be associated with a spatial object that is a Runway Area, Taxiway Area, Apron Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(ApronArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that a [SurfaceComposition](#SurfaceComposition) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea), [ApronArea](#ApronArea) or [TouchDownLiftOff](#TouchDownLiftOff).
+* UpperAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that an [UpperAltitudeLimit](#UpperAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
+* UseRestriction can only be associated with a spatial object that is an Air Route, Air Link (or specialized Air Link), Air Node (or specialized Air Node) or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRoute) or networkRef.element.oclIsKindOf(AirLink) or networkRef.element.oclIsKindOf(AirNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [UseRestriction](#UseRestriction) is only associated with a spatial object [AirRoute](#AirRoute), [AirLink](#AirLink), [AirNode](#AirNode) or [AerodromeArea](#AerodromeArea).
 
 **Reference(s)**: 
 
@@ -41,12 +45,24 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-address <a name="address"></a> 	| 	//schema-element(ad:address)
-component <a name="component"></a>   | //schema-element(ad:Address)/ad:component
-component level <a name="level"></a>  | //schema-element(ad:AdminUnitName)/ad:level
-GeographicPosition <a name="GeographicPosition"></a> 	| 	//schema-element(ad:address)/ad:position/ad:GeographicPosition
-default attribute <a name="default"></a> 	| 	//schema-element(ad:address)/ad:position/ad:GeographicPosition/ad:default
-postCode <a name="postCode"></a> 	| 	//schema-element(ad:PostalDescriptor)/ad:postCode
-postName <a name="postName"></a> 	| 	//schema-element(ad:PostalDescriptor)/ad:postName
-designator <a name="designator"></a> 	| 	//schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:designator
-name <a name="name"></a> 	| 	//schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:name
+AerodromeCategory <a name="AerodromeCategory"></a> 	| 	//schema-element(
+AerodromeNode <a name="AerodromeNode"></a>   | //schema-element(
+AerodromeArea <a name="AerodromeArea"></a>  | //schema-element(
+AerodromeType <a name="AerodromeType"></a> 	| 	//schema-element(
+ConditionOfAirFacility <a name="ConditionOfAirFacility"></a> 	| 	//schema-element(
+RunwayArea <a name="RunwayArea"></a> 	| 	//schema-element(
+ElementLength <a name="ElementLength"></a> 	| 	//schema-element(
+ElementWidth <a name="ElementWidth"></a> 	| 	//schema-element(
+TaxiwayArea <a name="TaxiwayArea"></a> 	| 	//schema-element(
+TouchDownLiftOff <a name="TouchDownLiftOff"></a> 	| 	//schema-element(
+FieldElevation <a name="FieldElevation"></a> 	| 	//schema-element(
+LowerAltitudeLimit <a name="LowerAltitudeLimit"></a> 	| 	//schema-element(
+UpperAltitudeLimit <a name="UpperAltitudeLimit"></a> 	| 	//schema-element(
+AirRouteLink <a name="AirRouteLink"></a> 	| 	//schema-element(
+AirRoute <a name="AirRoute"></a> 	| 	//schema-element(
+AirLink <a name="AirLink"></a> 	| 	//schema-element(
+AirNode <a name="AirNode"></a> 	| 	//schema-element(
+AirspaceArea <a name="AirspaceArea"></a> 	| 	//schema-element(
+SurfaceComposition <a name="SurfaceComposition"></a> 	| 	//schema-element(
+ApronArea <a name="ApronArea"></a> 	| 	//schema-element(
+UseRestriction <a name="UseRestriction"></a> 	| 	//schema-element(
