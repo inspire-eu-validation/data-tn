@@ -85,23 +85,11 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-AerodromeCategoryValue (v3) <a name="AerodromeCategoryValue3"></a>  | //schema-element(tn-a3:AerodromeCategory/tn-a3:aerodromeCategory/text()
-AerodromeCategoryValue (v4) <a name="AerodromeCategoryValue4"></a>  | //schema-element(tn-a:AerodromeCategory/tn-a:aerodromeCategory/@href:xlink
-AerodromeTypeValue (v3) <a name="AerodromeTypeValue3"></a>          | //schema-element(tn-a3:AerodromeType/tn-a3:aerodromeType/text()
-AerodromeTypeValue (v4) <a name="AerodromeTypeValue4"></a>          | //schema-element(tn-a:AerodromeType/tn-a:aerodromeType/@href:xlink
-AirRouteLinkClassValue (v3) <a name="AirRouteLinkClassValue3"></a>  | //schema-element(tn-a3:AirRouteLink/tn-a3:airRouteLinkClass/text()
-AirRouteLinkClassValue (v4) <a name="AirRouteLinkClassValue4"></a>  | //schema-element(tn-a:AirRouteLink/tn-a:airRouteLinkClass/@href:xlink
-AirRouteTypeValue (v3) <a name="AirRouteTypeValue3"></a>            | //schema-element(tn-a3:AirRoute/tn-a3:airRouteType/text()
-AirRouteTypeValue (v4) <a name="AirRouteTypeValue4"></a>            | //schema-element(tn-a:AirRoute/tn-a:airRouteType/@href:xlink
-AirUseRestrictionValue (v3) <a name="AirUseRestrictionValue3"></a>  | //schema-element(tn-a3:useRestriction/tn-a3:restriction/text()
-AirUseRestrictionValue (v4) <a name="AirUseRestrictionValue4"></a>  | //schema-element(tn-a:useRestriction/tn-a:restriction/@href:xlink
-AirspaceAreaTypeValue (v3) <a name="AirspaceAreaTypeValue3"></a>    | //schema-element(tn-a3:AirspaceArea/tn-a3:AirspaceAreaType/text()
-AirspaceAreaTypeValue (v4) <a name="AirspaceAreaTypeValue4"></a>    | //schema-element(tn-a:AirspaceArea/tn-a:AirspaceAreaType/@href:xlink
-NavaidTypeValue (v3) <a name="NavaidTypeValue3"></a>                | //schema-element(tn-a3:Navaid/tn-a3:navaidType/text()
-NavaidTypeValue (v4) <a name="NavaidTypeValue4"></a>                | //schema-element(tn-a:Navaid/tn-a:navaidType/@href:xlink
-PointRoleValue (v3) <a name="PointRoleValue3"></a>                  | //schema-element(tn-a3:RunwayCentrelinePoint/tn-a3:pointRole/text()
-PointRoleValue (v4) <a name="PointRoleValue4"></a>                  | //schema-element(tn-a:RunwayCentrelinePoint/tn-a:pointRole/@href:xlink
-RunwayTypeValue (v3) <a name="RunwayTypeValue3"></a>                | //schema-element(tn-a3:RunwayArea/tn-a3:runwayType/text()
-RunwayTypeValue (v4) <a name="RunwayTypeValue4"></a>                | //schema-element(tn-a:RunwayArea/tn-a:runwayType/@href:xlink
-SurfaceCompositionValue (v3) <a name="SurfaceCompositionValue3"></a>| //schema-element(tn-a3:SurfaceComposition/tn-a3:surfaceComposition/text()
-SurfaceCompositionValue (v4) <a name="SurfaceCompositionValue4"></a>| //schema-element(tn-a:SurfaceComposition/tn-a:surfaceComposition/@href:xlink
+FormOfRailwayNodeValue (v3) <a name="FormOfRailwayNodeValue3"></a>  | //schema-element(tn-ra3:RailwayNode)/tn-ra3:formOfNode/text()
+or //schema-element(tn-ra3:RailwayYardNode)/tn-ra3:formOfNode/text() or //schema-element(tn-ra3:RailwayStationNode)/tn-ra3:formOfNode/text()
+FormOfRailwayNodeValue (v4) <a name="FormOfRailwayNodeValue4"></a>  | //schema-element(tn-ra:RailwayNode)/tn-ra:formOfNode/@href:xlink
+or //schema-element(tn-ra:RailwayYardNode)/tn-ra:formOfNode/@href:xlink or //schema-element(tn-ra:RailwayStationNode)/tn-ra:formOfNode/@href:xlink
+RailwayTypeValue (v3) <a name="RailwayTypeValue3"></a>  | //schema-element(tn-ra3:RailwayType/tn-ra3:type/text()
+RailwayTypeValue (v4) <a name="RailwayTypeValue4"></a>  | //schema-element(tn-ra:RailwayType/tn-ra:type/@href:xlink
+RailwayUseValue (v3) <a name="RailwayUseValue3"></a>  | //schema-element(tn-ra3:RailwayUse/tn-ra3:use/text()
+RailwayUseValue (v4) <a name="RailwayUseValue4"></a>  | //schema-element(tn-ra:RailwayUse/tn-ra:use/@href:xlink

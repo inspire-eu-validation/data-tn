@@ -72,7 +72,7 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-FerryUseValue (v3) <a name="FerryUseValue3"></a>                      | //schema-element(tn-a3:FerryUse)/tn-a3:ferryUse/text()
-FerryUseValue (v4) <a name="FerryUseValue4"></a>                      | //schema-element(tn-a:FerryUse)/tn-a:ferryUse/@href:xlink
-FormOfWaterwayNodeValue (v3) <a name="FormOfWaterwayNodeValue3"></a>  | //schema-element(tn-a3:WaterwayNode)/tn-a3:formOfWaterwayNode/text()
-FormOfWaterwayNodeValue (v4) <a name="FormOfWaterwayNodeValue4"></a>  | //schema-element(tn-a:WaterwayNode)/tn-a:formOfWaterwayNode/@href:xlink
+FerryUseValue (v3) <a name="FerryUseValue3"></a>                      | //schema-element(tn-w3:FerryUse)/tn-w3:ferryUse/text()
+FerryUseValue (v4) <a name="FerryUseValue4"></a>                      | //schema-element(tn-w:FerryUse)/tn-w:ferryUse/@href:xlink
+FormOfWaterwayNodeValue (v3) <a name="FormOfWaterwayNodeValue3"></a>  | //schema-element(tn-w3:WaterwayNode)/tn-w3:formOfWaterwayNode/text()
+FormOfWaterwayNodeValue (v4) <a name="FormOfWaterwayNodeValue4"></a>  | //schema-element(tn-w:WaterwayNode)/tn-w:formOfWaterwayNode/@href:xlink

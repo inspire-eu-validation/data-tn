@@ -53,5 +53,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-CablewayTypeValue (v3) <a name="CablewayTypeValue3"></a>  | //schema-element(tn-a3:CablewayLink)/tn-a3:cablewayType/text()
-CablewayTypeValue (v4) <a name="CablewayTypeValue4"></a>  | //schema-element(tn-a:CablewayLink)/tn-a:cablewayType/@href:xlink
+CablewayTypeValue (v3) <a name="CablewayTypeValue3"></a>  | //schema-element(tn-ca3:CablewayLink)/tn-ca3:cablewayType/text()
+CablewayTypeValue (v4) <a name="CablewayTypeValue4"></a>  | //schema-element(tn-ca:CablewayLink)/tn-ca:cablewayType/@href:xlink
