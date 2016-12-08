@@ -14,21 +14,17 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* AerodromeCategory can only be associated with a spatial object that is an Aerodrome Node or an Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeCategory](#AerodromeCategory) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* AerodromeType can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeType](#AerodromeType) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* ConditionOfAirFacility can only be associated with a spatial object that is an Aerodrome Node, an Aerodrome Area or a Runway Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea) or networkRef.element.oclIsKindOf(RunwayArea)". Verify that a [ConditionOfAirFacility](#ConditionOfAirFacility) is only associated with a spatial object [AerodromeNode](#AerodromeNode), [AerodromeArea](#AerodromeArea) or [RunwayArea](#RunwayArea).
-* ElementLength can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)." Verify that an [ElementLength](#ElementLength) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* ElementWidth can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that an [ElementWidth](#ElementWidth) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* FieldElevation can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [FieldElevation](#FieldElevation) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* LowerAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that a [LowerAltitudeLimit](#LowerAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
-* SurfaceComposition can only be associated with a spatial object that is a Runway Area, Taxiway Area, Apron Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(ApronArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that a [SurfaceComposition](#SurfaceComposition) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea), [ApronArea](#ApronArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* UpperAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that an [UpperAltitudeLimit](#UpperAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
-* UseRestriction can only be associated with a spatial object that is an Air Route, Air Link (or specialized Air Link), Air Node (or specialized Air Node) or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRoute) or networkRef.element.oclIsKindOf(AirLink) or networkRef.element.oclIsKindOf(AirNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [UseRestriction](#UseRestriction) is only associated with a spatial object [AirRoute](#AirRoute), [AirLink](#AirLink), [AirNode](#AirNode) or [AerodromeArea](#AerodromeArea).
+* CEMTClass can only be associated with a spatial object that is part of a water transport network; OCL: "inv: networkRef.element.oclIsKindOf(InlandWaterway)". Verify that a [CEMTClass](#CEMTClass) is only associated with a spatial object [InlandWaterway](#InlandWaterway).
+* ConditionOfWaterFacility can only be associated with a spatial object that is part of a water transport network; OCL: "inv: networkRef.element.oclIsKindOf(PortArea) or networkRef.element.oclIsKindOf(PortNode)". Verify that a [ConditionOfWaterFacility](#ConditionOfWaterFacility) is only associated with a spatial object [PortArea](#PortArea) or [PortNode](#PortNode).
+* FerryUse can only be associated with a spatial object that is part of a water transport network; OCL: "inv: networkRef.element.oclIsKindOf(FerryCrossing)". Verify that a [FerryUse](#FerryUse) is only associated with a spatial object [FerryCrossing](#FerryCrossing).
+* RestrictionForWaterVehicles can only be associated with a spatial object that is part of a water transport network; OCL: "inv: networkRef.element.oclIsKindOf(WaterwayLink) or networkRef.element.oclIsKindOf(WaterwayNode)". Verify that a [RestrictionForWaterVehicles](#RestrictionForWaterVehicles) is only associated with a spatial object [WaterwayLink](#WaterwayLink) or [WaterwayNode](#WaterwayNode).
+* WaterTrafficFlowDirection can only be associated with a spatial object that is part of a water transport network; OCL: "inv: networkRef.element.oclIsKindOf(WaterLinkSequence) or networkRef.element.oclIsKindOf(WaterwayLink)". Verify that a [WaterTrafficFlowDirection](#WaterTrafficFlowDirection) is only associated with a spatial object [WaterLinkSequence](#WaterLinkSequence) or [WaterwayLink](#WaterwayLink).
+
 
 **Reference(s)**: 
 
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (2)
-* [TG DS-AD](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as/README#ref_TG_DS_AD)) 5.4
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-a-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (2)
+* [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-a-as/README#ref_TG_DS_TN)) 5.4
 
 **Test type**: Automated
 
@@ -41,28 +37,19 @@ brokenLink <a name="brokenLink"/>  |  XML document '$filename', $featureType '$g
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-p-as/README#namespaces).
+The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-a-as/README#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-AerodromeCategory <a name="AerodromeCategory"></a> 	| 	//schema-element(
-AerodromeNode <a name="AerodromeNode"></a>   | //schema-element(
-AerodromeArea <a name="AerodromeArea"></a>  | //schema-element(
-AerodromeType <a name="AerodromeType"></a> 	| 	//schema-element(
-ConditionOfAirFacility <a name="ConditionOfAirFacility"></a> 	| 	//schema-element(
-RunwayArea <a name="RunwayArea"></a> 	| 	//schema-element(
-ElementLength <a name="ElementLength"></a> 	| 	//schema-element(
-ElementWidth <a name="ElementWidth"></a> 	| 	//schema-element(
-TaxiwayArea <a name="TaxiwayArea"></a> 	| 	//schema-element(
-TouchDownLiftOff <a name="TouchDownLiftOff"></a> 	| 	//schema-element(
-FieldElevation <a name="FieldElevation"></a> 	| 	//schema-element(
-LowerAltitudeLimit <a name="LowerAltitudeLimit"></a> 	| 	//schema-element(
-UpperAltitudeLimit <a name="UpperAltitudeLimit"></a> 	| 	//schema-element(
-AirRouteLink <a name="AirRouteLink"></a> 	| 	//schema-element(
-AirRoute <a name="AirRoute"></a> 	| 	//schema-element(
-AirLink <a name="AirLink"></a> 	| 	//schema-element(
-AirNode <a name="AirNode"></a> 	| 	//schema-element(
-AirspaceArea <a name="AirspaceArea"></a> 	| 	//schema-element(
-SurfaceComposition <a name="SurfaceComposition"></a> 	| 	//schema-element(
-ApronArea <a name="ApronArea"></a> 	| 	//schema-element(
-UseRestriction <a name="UseRestriction"></a> 	| 	//schema-element(
+CEMTClass <a name="CEMTClass"></a> 							| 	//schema-element(
+InlandWaterway <a name="InlandWaterway"></a> 				| 	//schema-element(
+ConditionOfWaterFacility <a name="ConditionOfWaterFacility"></a> | //schema-element(
+PortArea <a name="PortArea"></a> 							| 	//schema-element(
+PortNode <a name="PortNode"></a> 							| 	//schema-element(
+FerryUse <a name="FerryUse"></a> 							| 	//schema-element(
+FerryCrossing <a name="FerryCrossing"></a> 					| 	//schema-element(
+RestrictionForWaterVehicles <a name="RestrictionForWaterVehicles"></a> | //schema-element(
+WaterwayLink <a name="WaterwayLink"></a> 					| 	//schema-element(
+WaterwayNode <a name="WaterwayNode"></a> 					| 	//schema-element(
+WaterTrafficFlowDirection <a name="WaterTrafficFlowDirection"></a> | //schema-element(
+WaterLinkSequence <a name="WaterLinkSequence"></a> 			| 	//schema-element(
