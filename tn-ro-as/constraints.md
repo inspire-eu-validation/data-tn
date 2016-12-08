@@ -14,16 +14,14 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* AerodromeCategory can only be associated with a spatial object that is an Aerodrome Node or an Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeCategory](#AerodromeCategory) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* AerodromeType can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that an [AerodromeType](#AerodromeType) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* ConditionOfAirFacility can only be associated with a spatial object that is an Aerodrome Node, an Aerodrome Area or a Runway Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea) or networkRef.element.oclIsKindOf(RunwayArea)". Verify that a [ConditionOfAirFacility](#ConditionOfAirFacility) is only associated with a spatial object [AerodromeNode](#AerodromeNode), [AerodromeArea](#AerodromeArea) or [RunwayArea](#RunwayArea).
-* ElementLength can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)." Verify that an [ElementLength](#ElementLength) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* ElementWidth can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that an [ElementWidth](#ElementWidth) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* FieldElevation can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [FieldElevation](#FieldElevation) is only associated with a spatial object [AerodromeNode](#AerodromeNode) or [AerodromeArea](#AerodromeArea).
-* LowerAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that a [LowerAltitudeLimit](#LowerAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
-* SurfaceComposition can only be associated with a spatial object that is a Runway Area, Taxiway Area, Apron Area or Touch Down Lift Off; OCL: "inv: networkRef.element.oclIsKindOf(RunwayArea) or networkRef.element.oclIsKindOf(TaxiwayArea) or networkRef.element.oclIsKindOf(ApronArea) or networkRef.element.oclIsKindOf(TouchDownLiftOff)". Verify that a [SurfaceComposition](#SurfaceComposition) is only associated with a spatial object [RunwayArea](#RunwayArea), [TaxiwayArea](#TaxiwayArea), [ApronArea](#ApronArea) or [TouchDownLiftOff](#TouchDownLiftOff).
-* UpperAltitudeLimit can only be associated with a spatial object that is an Air Route Link or Airspace Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRouteLink) or networkRef.element.oclIsKindOf(AirspaceArea)". Verify that an [UpperAltitudeLimit](#UpperAltitudeLimit) is only associated with a spatial object [AirRouteLink](#AirRouteLink) or [AirspaceArea](#AirspaceArea).
-* UseRestriction can only be associated with a spatial object that is an Air Route, Air Link (or specialized Air Link), Air Node (or specialized Air Node) or Aerodrome Area; OCL: "inv: networkRef.element.oclIsKindOf(AirRoute) or networkRef.element.oclIsKindOf(AirLink) or networkRef.element.oclIsKindOf(AirNode) or networkRef.element.oclIsKindOf(AerodromeArea)". Verify that a [UseRestriction](#UseRestriction) is only associated with a spatial object [AirRoute](#AirRoute), [AirLink](#AirLink), [AirNode](#AirNode) or [AerodromeArea](#AerodromeArea).
+* FormOfWay can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [FormOfWay](#FormOfWay) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* FunctionalRoadClass can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [FunctionalRoadClass](#FunctionalRoadClass) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* NumberOfLanes can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [NumberOfLanes](#NumberOfLanes) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* RoadName can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [RoadName](#RoadName) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* RoadSurfaceCategory can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [RoadSurfaceCategory](#RoadSurfaceCategory) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* RoadWidth can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [RoadWidth](#RoadWidth) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* SpeedLimit can only be associated with a spatial object that is part of a road transport network; OCL: "inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or networkRef.element.oclIsKindOf(RoadArea) or networkRef.element.oclIsKindOf(RoadServiceArea) or networkRef.element.oclIsKindOf(VehicleTrafficArea)". Verify that a [SpeedLimit](#SpeedLimit) is only associated with a spatial object [Road](#Road), [ERoad](#ERoad), [RoadLink](#RoadLink), [RoadLinkSequence](#RoadLinkSequence), [RoadNode](#RoadNode), [RoadArea](#RoadArea), [RoadServiceArea](#RoadServiceArea), or [VehicleTrafficArea](#VehicleTrafficArea).
+* RoadServiceType can only be associated with a spatial object of the type RoadServiceArea or RoadNode (when formOfRoadNode=roadServiceArea); OCL: "inv: networkRef.element.oclIsKindOf(RoadServiceArea) or (networkRef.element.oclIsKindOf(RoadNode) and networkRef.element.formOfRoadNode = FormOfRoadNodeValue::roadServiceArea)". Verify that a [RoadServiceType](#RoadServiceType) is only associated with a spatioal object [RoadServiceArea](#RoadServiceArea), or [RoadNode](#RoadNode) when the attribute [formOfRoadNode](#formOfRoadNode) has roadServiceArea as value.
 
 **Reference(s)**: 
 
@@ -45,24 +43,22 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-AerodromeCategory <a name="AerodromeCategory"></a> 	| 	//schema-element(
-AerodromeNode <a name="AerodromeNode"></a>   | //schema-element(
-AerodromeArea <a name="AerodromeArea"></a>  | //schema-element(
-AerodromeType <a name="AerodromeType"></a> 	| 	//schema-element(
-ConditionOfAirFacility <a name="ConditionOfAirFacility"></a> 	| 	//schema-element(
-RunwayArea <a name="RunwayArea"></a> 	| 	//schema-element(
-ElementLength <a name="ElementLength"></a> 	| 	//schema-element(
-ElementWidth <a name="ElementWidth"></a> 	| 	//schema-element(
-TaxiwayArea <a name="TaxiwayArea"></a> 	| 	//schema-element(
-TouchDownLiftOff <a name="TouchDownLiftOff"></a> 	| 	//schema-element(
-FieldElevation <a name="FieldElevation"></a> 	| 	//schema-element(
-LowerAltitudeLimit <a name="LowerAltitudeLimit"></a> 	| 	//schema-element(
-UpperAltitudeLimit <a name="UpperAltitudeLimit"></a> 	| 	//schema-element(
-AirRouteLink <a name="AirRouteLink"></a> 	| 	//schema-element(
-AirRoute <a name="AirRoute"></a> 	| 	//schema-element(
-AirLink <a name="AirLink"></a> 	| 	//schema-element(
-AirNode <a name="AirNode"></a> 	| 	//schema-element(
-AirspaceArea <a name="AirspaceArea"></a> 	| 	//schema-element(
-SurfaceComposition <a name="SurfaceComposition"></a> 	| 	//schema-element(
-ApronArea <a name="ApronArea"></a> 	| 	//schema-element(
-UseRestriction <a name="UseRestriction"></a> 	| 	//schema-element(
+FormOfWay <a name="FormOfWay"></a> 						| 	//schema-element(tn-ro:
+FunctionalRoadClass <a name="FunctionalRoadClass"></a> 	| 	//schema-element(tn-ro:
+NumberOfLanes <a name="NumberOfLanes"></a> 				| 	//schema-element(tn-ro:
+RoadName <a name="RoadName"></a> 						| 	//schema-element(tn-ro:
+RoadSurfaceCategory <a name="RoadSurfaceCategory"></a> 	| 	//schema-element(tn-ro:
+RoadWidth <a name="RoadWidth"></a> 						| 	//schema-element(tn-ro:
+SpeedLimit <a name="SpeedLimit"></a> 					| 	//schema-element(tn-ro:
+Road <a name="Road"></a> 								| 	//schema-element(tn-ro:
+ERoad <a name="ERoad"></a> 								| 	//schema-element(tn-ro:
+RoadLink <a name="RoadLink"></a> 						| 	//schema-element(tn-ro:
+RoadLinkSequence <a name="RoadLinkSequence"></a> 		| 	//schema-element(tn-ro:
+RoadNode <a name="RoadNode"></a> 						| 	//schema-element(tn-ro:
+RoadArea <a name="RoadArea"></a> 						| 	//schema-element(tn-ro:
+RoadServiceArea <a name="RoadServiceArea"></a> 			| 	//schema-element(tn-ro:
+VehicleTrafficArea <a name="VehicleTrafficArea"></a> 	| 	//schema-element(tn-ro:
+RoadServiceType <a name="RoadServiceType"></a> 			| 	//schema-element(tn-ro:
+RoadServiceArea <a name="RoadServiceArea"></a> 			| 	//schema-element(tn-ro:
+RoadNode <a name="RoadNode"></a> 						| 	//schema-element(tn-ro:
+formOfRoadNode <a name="formOfRoadNode"></a> 			| 	//schema-element(tn-ro:
