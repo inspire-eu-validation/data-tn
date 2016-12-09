@@ -114,7 +114,6 @@ Water Transport Networks:
 
 Air Transport Networks:
 
-* Type Package Stereotypes
 * AerodromeArea
 * AerodromeCategory
 * AerodromeNode

@@ -29,7 +29,6 @@ An indirect dependency is another conformance class whose requirements must be m
 
 The instantiable feature types in the application schema are:
 
-* Type Package Stereotypes
 * AerodromeArea
 * AerodromeCategory
 * AerodromeNode
