@@ -14,7 +14,7 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* TrafficFlowDirection can only be associated with a spatial object of the type Link or LinkSequence; OCL: "inv: networkRef.element.oclIsKindOf(LinkReference)". Verify that an [TrafficFlowDirection](#TrafficFlowDirection) only has a [Network element association](#NetworkElement) with a spatial object LinkReference.
+* TrafficFlowDirection can only be associated with a spatial object of the type Link or LinkSequence; OCL: "inv: networkRef.element.oclIsKindOf(LinkReference)". Verify that an [TrafficFlowDirection](#TrafficFlowDirection) only has a [Network element association](#NetworkElement) with a spatial object [TransportLink](#TransportLink) or [TransportLinkSequence](#TransportLinkSequence).
 * All transport areas have an external object identifier; OCL: "inv:inspireId->notEmpty()". Verify that all [TransportArea](#TransportArea) have an [inspireID](#inspireID).
 * All transport links have an external object identifier; OCL: "inv:inspireId->notEmpty()". Verify that all [TransportLink](#TransportLink) have an [inspireID](#inspireID).
 * All transport link sequences have an external object identifier; OCL: "inv:inspireId->notEmpty()". Verify that all [TransportLinkSequence](#TransportLinkSequence) have an [inspireID](#inspireID).
