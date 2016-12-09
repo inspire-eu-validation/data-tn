@@ -4,7 +4,7 @@ Conformance class for the requirements associated with reference systems (spatia
 
 To be able to test this conformance class, the encoding of the data set must be known, i.e. this is a parameterized conformance class. The XPath expressions used in this test suite assume that the GML encoding is used. If used with the GML encoding this conformance class has an indirect dependency to the conformance class "GML application schema for Transport Networks".
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2).
 
 ## Standardization target type
 
@@ -18,7 +18,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/ad-rs/README#ref_TG_DS_tmpl) | [Reference systems](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/reference-systems) | n/a |
+| [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-rs/README#ref_TG_DS_tmpl) | [Reference systems](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/reference-systems) | n/a |
 
 ### Indirect dependencies
 
@@ -26,7 +26,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/ad-rs/README#ref_TG_DS_TN) | [GML application schema, Transport Networks Simple](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/ad-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features | n/a |
+| [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-rs/README#ref_TG_DS_TN) | [GML application schema, Transport Networks Simple](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features | n/a |
  
 ## Feature types <a name="feature-types"></a>
 
@@ -42,7 +42,7 @@ The following abbreviations are used in the test text for referring to external 
 
 Abbreviation                     | Document name
 -------------------------------- | --------------------------------------------------
-TG DS-TN <a name="ref_TG_DS_TN"></a>   | [INSPIRE Data Specification on Transport Networks – Technical Guidelines version 3.1](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_TN_v3.1.pdf)
+TG DS-TN <a name="ref_TG_DS_TN"></a>   | [INSPIRE Data Specification on Transport Networks – Technical Guidelines version 3.2](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_TN_v3.2.pdf)
 TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
 
 ## Test Cases
