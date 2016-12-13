@@ -41,8 +41,9 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
+TransportLinkSet <a name="TransportLinkSet"></a> 	| 	//schema-element(tn-ro:Road) or //schema-element(tn-ro:ERoad) or //schema-element(tn-w:RailwayLine) or //schema-element(tn-ca:CablewayLinkSet) or //schema-element(tn-w:FerryCrossing) or //schema-element(tn-w:MarineWaterway) or //schema-element(tn-w:InlandWaterway) or //schema-element(tn-a:AirRoute)
 route <a name ="route"></a>	| //schema-element(tn:MarkerPost)/tn:route/@xlink:href
-post <a name ="post"></a>	| //schema-element(tn-ro:Road)/ad:post/@xlink:href or //schema-element(tn-ro:ERoad)/ad:post/@xlink:href
+post <a name ="post"></a>	| //schema-element(tn-ro:Road)/tn:post/@xlink:href or //schema-element(tn-ro:ERoad)/tn:post/@xlink:href or //schema-element(tn-w:RailwayLine)/tn:post/@xlink:href or //schema-element(tn-ca:CablewayLinkSet)/tn:post/@xlink:href or //schema-element(tn-w:FerryCrossing)/tn:post/@xlink:href or //schema-element(tn-w:MarineWaterway)/tn:post/@xlink:href or //schema-element(tn-w:InlandWaterway)/tn:post/@xlink:href or //schema-element(tn-a:AirRoute)/tn:post/@xlink:href
 component <a name ="component"></a>	| 
 markerBuoy <a name ="markerBuoy"></a>	| 
 marineWaterRoute <a name ="marineWaterRoute"></a>	| 
