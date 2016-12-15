@@ -36,4 +36,4 @@ TransportLinkSequence <a name="TransportLinkSequence"></a> 	| 	//schema-element(
 NetworkConnection <a name="NetworkConnection"></a>	|	//schema-element(net:NetworkConnection)
 type attribute <a name="typeAttribute"></a>	|	//schema-element(net:NetworkConnection)/net:type
 element association role <a name="elementAssociationRole"></a>	|	//schema-element(net:NetworkConnection)/net:element/@xlink:href
-inNetwork association role <a name="inNetworkAssociationRole"></a>	|	//schema-element(net:NetworkElement)/net:inNetwork
+inNetwork association role <a name="inNetworkAssociationRole"></a>	|	$NetworkElement/net:inNetwork
