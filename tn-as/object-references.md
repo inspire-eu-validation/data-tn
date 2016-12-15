@@ -16,7 +16,7 @@
 * [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/README#ref_TG_DS_tmpl) IR requirement Section 7.9.2 (1)
 * [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/README#ref_TG_DS_tmpl) IR requirement Section 7.9.2 (2)
 
-**Test type**: Manual
+**Test type**: Automated
 
 **Notes**:
 
