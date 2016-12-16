@@ -1,4 +1,4 @@
-# Conformance class: Application schema, Transport Networks (DRAFT)
+# Conformance class: Application schema, Transport Networks Common (DRAFT)
 
 Conformance class for the requirements associated with the application schema. 
 
@@ -56,6 +56,9 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 | ----------------------------------------------------------------- | -------- | ------------ |
 | [Code list values](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/code-list-values)  | Draft  | A.1.3, A.6.1  |
 | [Constraints](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/constraints)  | Draft  | A.1.6  |
+| [Geometry](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/geometry)  | Draft  | A.1.7  |
+| [Object Reference Modelling](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/object-references)  | Draft  | A.1.8  |
+| [Network Connectivity](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/network-connectivity)  | Draft  | A.1.10  |
 
 
 ## XML namespace prefixes <a name="namespaces"></a>

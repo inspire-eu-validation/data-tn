@@ -63,6 +63,7 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 | ----------------------------------------------------------------- | -------- | ------------ |
 | [Code list values](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as/code-list-values)  | Draft  | A.1.3, A.6.1  |
 | [Constraints](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as/constraints)  | Draft  | A.1.6  |
+| [Link centrelines](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as/link-centrelines)  | Draft  | A.1.9  |
 
 
 ## XML namespace prefixes <a name="namespaces"></a>
