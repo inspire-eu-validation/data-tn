@@ -9,7 +9,7 @@ The specification specifies the following conformance classes:
 | [GML application schema, Transport Networks Simple](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features |
 | [Application schema, Transport Networks Common](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-as) | INSPIRE spatial data set |
 | [Application schema, Transport Networks Air](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-a-as) | INSPIRE spatial data set |
-| [Application schema, Transport Networks Cable](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ca-as) | INSPIRE spatial data set |
+| [Application schema, Transport Networks Cable](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-c-as) | INSPIRE spatial data set |
 | [Application schema, Transport Networks Rail](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ra-as) | INSPIRE spatial data set |
 | [Application schema, Transport Networks Road](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ro-as) | INSPIRE spatial data set |
 | [Application schema, Transport Networks Water](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-w-as) | INSPIRE spatial data set |

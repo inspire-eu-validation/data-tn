@@ -54,15 +54,15 @@ additionalNode <a name="additionalNode"/>  |  XML document '$filename', Transpor
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-hy/3.1/hy-n-as/README#namespaces).
+The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/README#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-TransportLink <a name="TransportLink"></a>   | //schema-element(hy-n:TransportLink)[net:startNode or net:endNode] 
+TransportLink <a name="TransportLink"></a>   | //schema-element(tn:TransportLink)[net:startNode or net:endNode] 
 centerlineGeometry <a name="geometry"></a>   | $TransportLink/net:centerlineGeometry 
-start <a name="start"></a>   | $TransportLink/net:startNode/hy-n:TransportNodeNode/net:geometry 
-end <a name="end"></a>   | $TransportLink/net:endNode/hy-n:TransportNodeNode/net:geometry 
-TransportNodeNodes <a name="TransportNodes"></a>   | //schema-element(hy-n:TransportNodeNode) 
+start <a name="start"></a>   | $TransportLink/net:startNode/tn:TransportNodeNode/net:geometry 
+end <a name="end"></a>   | $TransportLink/net:endNode/tn:TransportNodeNode/net:geometry 
+TransportNodeNodes <a name="TransportNodes"></a>   | //schema-element(tn:TransportNodeNode) 
 startNode <a name="start"></a>   | $TransportLink/net:startNode 
 endNode <a name="end"></a>   | $TransportLink/net:endNode 
 
