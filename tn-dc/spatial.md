@@ -23,8 +23,8 @@ Manual assertions:
 
 **Reference(s)**: 
 
-* [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-dc/README#ref_TG_DS_TN) IR requirement Section 7.9.1 (1)
-* [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-dc/README#ref_TG_DS_TN) IR requirement Section 7.9.1 (2)
+* [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-dc/README#ref_TG_DS_TN) IR requirement Section 7.9.1 (1)
+* [TG DS-TN](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-dc/README#ref_TG_DS_TN) IR requirement Section 7.9.1 (2)
 
 **Test type**: Automated/Manual
 
@@ -36,7 +36,7 @@ notWithin <a name="notWithin"/>  |  XML document '$filename', $featureType '$gml
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-dc/README#namespaces).
+The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-dc/README#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
