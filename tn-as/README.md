@@ -16,7 +16,7 @@ INSPIRE spatial data set
 
 none
 
-Note that there is a dependency on the requirements related to the Generic Network Model application schema. This application schema only adds two requirements (two OCL constraints) that are not already covered by the tests for the conformance class "INSPIRE GML application schemas". As the tests for the Transport Network application schemas include more specific constraints, it is not necessary to create a separate Executable Test Suite for the Generic Network Model application schema. 
+Note that there is a dependency on the requirements related to the Generic Network Model application schema. This application schema only adds two requirements (two OCL constraints) that are not already covered by the tests for the conformance class "INSPIRE GML application schemas". As the tests for the Transport Network application schemas include more specific constraints, it is not necessary to create a separate Abstract Test Suite for the Generic Network Model application schema. 
 
 ### Indirect dependencies
 
