@@ -6,18 +6,18 @@ The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [GML application schema, Transport Networks Simple](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features |
-| [Application schema, Transport Networks Common](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-as) | INSPIRE spatial data set |
-| [Application schema, Transport Networks Air](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-a-as) | INSPIRE spatial data set |
-| [Application schema, Transport Networks Cable](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-c-as) | INSPIRE spatial data set |
-| [Application schema, Transport Networks Rail](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ra-as) | INSPIRE spatial data set |
-| [Application schema, Transport Networks Road](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ro-as) | INSPIRE spatial data set |
-| [Application schema, Transport Networks Water](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-w-as) | INSPIRE spatial data set |
-| [Reference Systems, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-rs) | INSPIRE spatial data set |
-| [Data Consistency, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-dc) | INSPIRE spatial data set |
-| [Information Accessibility, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-ia) | INSPIRE spatial data set |
-| [Portrayal, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-portrayal) | INSPIRE view service |
-| [Metadata for interoperability, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-metadata) | ISO 19115/19119 metadata record |
+| [GML application schema, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-gml) | INSPIRE spatial data set encoded in GML, Transport Networks features |
+| [Application schema, Transport Networks Common](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as) | INSPIRE spatial data set |
+| [Application schema, Transport Networks Air](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-a-as) | INSPIRE spatial data set |
+| [Application schema, Transport Networks Cable](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-c-as) | INSPIRE spatial data set |
+| [Application schema, Transport Networks Rail](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ra-as) | INSPIRE spatial data set |
+| [Application schema, Transport Networks Road](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ro-as) | INSPIRE spatial data set |
+| [Application schema, Transport Networks Water](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-w-as) | INSPIRE spatial data set |
+| [Reference Systems, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-rs) | INSPIRE spatial data set |
+| [Data Consistency, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-dc) | INSPIRE spatial data set |
+| [Information Accessibility, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ia) | INSPIRE spatial data set |
+| [Portrayal, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-portrayal) | INSPIRE view service |
+| [Metadata for interoperability, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-metadata) | ISO 19115/19119 metadata record |
 
 ## Approach
 

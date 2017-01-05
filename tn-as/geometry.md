@@ -18,8 +18,8 @@ Manual assertions:
 
 **Reference(s)**: 
 
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-as/README#ref_TG_DS_tmpl) IR requirement Section 7.9.3 (1)
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-as/README#ref_TG_DS_tmpl) IR requirement Section 7.9.3 (2)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/README#ref_TG_DS_tmpl) IR requirement Section 7.9.3 (1)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/README#ref_TG_DS_tmpl) IR requirement Section 7.9.3 (2)
 
 **Test type**: Automated/Manual
 
@@ -31,7 +31,7 @@ freeNode <a name="freeNode"/>  |  XML document '$filename', HydroNode '$gmlid': 
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-as/README#namespaces).
+The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-as/README#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------

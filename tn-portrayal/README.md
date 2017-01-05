@@ -1,6 +1,6 @@
 # Conformance class: Portrayal, Transport Networks (DRAFT)
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.1).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2).
 
 ## Standardization target type
 
@@ -44,8 +44,8 @@ This Conformance Class contains the following tests.
 
 | Identifier                                                                          | Status   |
 | ----------------------------------------------------------------------------------- | -------- |
-| [Layers](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-portrayal/layers) | Ready for review |
-| [Layer name](http://inspire.ec.europa.eu/id/ats/data-tn/3.1/tn-portrayal/layer-name) | Ready for review |
+| [Layers](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-portrayal/layers) | Ready for review |
+| [Layer name](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-portrayal/layer-name) | Ready for review |
 
 ## Open issues
 
