@@ -17,7 +17,6 @@ The specification specifies the following conformance classes:
 | [Data Consistency, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-dc) | INSPIRE spatial data set |
 | [Information Accessibility, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-ia) | INSPIRE spatial data set |
 | [Portrayal, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-portrayal) | INSPIRE view service |
-| [Metadata for interoperability, Transport Networks](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-metadata) | ISO 19115/19119 metadata record |
 
 ## Approach
 
@@ -45,9 +44,9 @@ Note that the TG conformance class is "informative" in the data specification. H
 
 The INSPIRE technical guidance documents are in general unspecific on the details of HTTP requests to access resources. The following rules apply to all HTTP requests unless a test case explicitly states deviations from these rules.
 
-### Use of HTTad
+### Use of HTTPS
 
-Where HTTP is mentioned as the protocol, HTTad may be used, too. SSL certificates must be valid and issued by a trusted Certification Authority.
+Where HTTP is mentioned as the protocol, HTTPS may be used, too. SSL certificates must be valid and issued by a trusted Certification Authority.
 
 This also implies that where "HTTP URI" or "URL" is used, this includes URIs in the HTTad scheme.
 
