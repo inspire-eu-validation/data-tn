@@ -36,6 +36,7 @@ TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Tem
 | Identifier                                                        | Status   | Test case in [TG DS-TN](#ref_TG_DS_TN)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
 | [Basic test](http://inspire.ec.europa.eu/id/ats/data-tn/3.2/tn-gml/basic)  | ready for review  | A.1.1, (A.6.1)  |
+| [Validation against INSPIRE official schema](./official-schema-validation.md)  | ready for review  | A.1.1, (A.6.1)  |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
