@@ -10,7 +10,9 @@
 
 Automated assertions:
 
-* Using a geometry library, verify for each [TransportNode](#TransportNode) that the [geometry](#geometry) (a gml:Point) is located a position that touches a [TransportLink](#TransportLink).[centerlineGeometry](#centerlineGeometry) (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a transport link. Otherwise report [freeNode](#freeNode).
+* If the TransportNode and the TransportLink feature types are contained in the same dataset, using a geometry library, verify for each [TransportNode](#TransportNode) that the [geometry](#geometry) (a gml:Point) is located a position that touches a [TransportLink](#TransportLink).[centerlineGeometry](#centerlineGeometry) (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a transport link. If the check fails report [freeNode](#freeNode).
+
+  *  Otherwise, if the TransportNode and the TransportLink feature types are not contained in the same dataset, a manual check is required to verify that for each [TransportNode](#TransportNode) the [geometry](#geometry) (a gml:Point) is located a position that touches a [TransportLink](#TransportLink).[centerlineGeometry](#centerlineGeometry) (a gml:LineString or gml:Curve), in this case report the message [freeNodeManualCheck](#freeNodeManualCheck).
 
 Manual assertions:
 
@@ -27,7 +29,8 @@ Manual assertions:
 
 Identifier  |  Message text (parameters start with '$')
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-freeNode <a name="freeNode"/>  |  XML document '$filename', HydroNode '$gmlid': The node is not located at the start or end of any TransportLink feature in the data set.
+freeNode <a name="freeNode"/>  |  XML document '$filename', TransportNode '$gmlid': The node is not located at the start or end of any TransportLink feature in the data set.
+freeNodeManualCheck <a name="freeNodeManualCheck"/>  |  XML document '$filename', TransportNode '$gmlid': The relevant TransportLink feature is not available in the data set, manually verify that the TransportNode geometry (a gml:Point) is located at a position that touches a TransportLink.centrelineGeometry (a gml:LineString or gml:Curve), i.e. that the node is at the start or end of a transport link.
 
 ## Contextual XPath references
 
