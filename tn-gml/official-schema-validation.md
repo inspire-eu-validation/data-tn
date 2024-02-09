@@ -12,9 +12,9 @@
   The official schemas for this data theme are:
   *  Air Transport Network: https://inspire.ec.europa.eu/schemas/tn-a/4.0/AirTransportNetwork.xsd
   *  Cable Transport Network: https://inspire.ec.europa.eu/schemas/tn-c/4.0/CableTransportNetwork.xsd
-  *  Railway Transport Network: https://inspire.ec.europa.eu/schemas/tn-ra/4.0/RailwayTransportNetwork.xsd
-  *  Road Transport Network: https://inspire.ec.europa.eu/schemas/tn-ro/4.0/RoadTransportNetwork.xsd
-  *  Water Transport Network: https://inspire.ec.europa.eu/schemas/tn-w/4.0/WaterTransportNetwork.xsd
+  *  Railway Transport Network: https://inspire.ec.europa.eu/schemas/tn-ra/5.0/RailwayTransportNetwork.xsd
+  *  Road Transport Network: https://inspire.ec.europa.eu/schemas/tn-ro/5.0/RoadTransportNetwork.xsd
+  *  Water Transport Network: https://inspire.ec.europa.eu/schemas/tn-w/5.0/WaterTransportNetwork.xsd
 
 **Reference(s)**: 
 
